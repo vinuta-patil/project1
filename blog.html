@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cant stop! wont stop! | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <nav class="total_nav">
+    <div class="logo">
+        <a href="one.html">
+        <img src="images/stop.jpg" width="100"></a>
+      </div>
+      <div class="options">
+      <a href="about.html">About US</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">contact</a>
+      <a href="register.html">Login/Register</a>
+    </div>
+    </nav><br><br>
+    <div class="additionals">
+    <div class="additionals_container">
+      <div class="list">
+       <div class="list_img">
+          <img src="images/moti1.jpg">
+        </div>
+          <div class="list_content">
+            <p>This course will teach you
+              about the most effective ways  to motivate yourself and others.
+              Motivation is the master skill of success - without it,
+               you will fail, but with it, you can find success!You will
+               be able to crush false beliefs and negative concepts of
+               yourself, and break through the "Glass Ceiling" that is limiting your potential.
+           </p>
+              </div>
+      </div>
+      <div class="list">
+       <div class="list_img">
+          <img src="images/moti2.jpg">
+        </div>
+          <div class="list_content">
+            <p>We have conducted classes for lakhs of people and we belive in receiving positive responses.
+              In this course you will learn how to build a motivational mindset
+               and acquire the skills to destroy any demotivators that have been
+               holding you back. Take this course today and get your motivation back fast! </p>
+                  </div>
+      </div>
+      <div class="list">
+       <div class="list_img">
+          <img src="images/talent1.jpg">
+        </div>
+          <div class="list_content">
+            <p>Twinkle Toes is also a ballet, tap and jazz combination class!  This fun and exciting
+               class inspires creativity and teaches the fundamentals of ballet, tap and jazz.
+               Students will develop musicality, coordination, strength, flexibility. It is an excellent
+              way for children to be introduced to the many benefits of the performing arts &
+               gain self-confidence.</p>
+               </div>
+      </div>
+    </div>
+  </div>
+  <div class="additionals" id="hey">
+  <div class="additionals_container">
+    <div class="list">
+     <div class="list_img">
+        <img src="images/talent2.jpg">
+      </div>
+        <div class="list_content">
+          <p>Painting is a year long visual art course where students will explore and experience
+            a variety of painting techniques, media, and historical approaches to art.
+            Painting is a problem-solving course dealing with form, color, line, and texture
+         </p>
+         </div>
+    </div>
+    <div class="list">
+     <div class="list_img">
+        <img src="images/yoga1.jpg">
+      </div>
+        <div class="list_content">
+          <p>Complete Health Yoga has gathered expert-level instructors,
+            many with decades of experience, to ensure that every student
+             who attends class will have access to a rich yoga practice. </p>
+             </div>
+    </div>
+    <div class="list">
+     <div class="list_img">
+        <img src="images/yoga2.jpg">
+      </div>
+        <div class="list_content">
+          <p>'Awakening | Complete meditation, mindfulness and mind training
+            course'  is an easy to follow and practical meditation course for
+             complete beginners and advanced meditators. Meditation classes
+              are taken on large scale by our organisation.</p>
+             </div>
+    </div>
+  </div>
+</div>
+    <footer>
+      <div class="footer_logo">
+          <a href="one.html">
+          <img src="images/stop.jpg" width="100"></a>
+        </div><br>
+        <div class="Pages">
+          <h3>pages</h3>
+          <a href="about.html">About US</a> |
+          <a href="blog.html">Blog</a> |
+          <a href="register.html">Login/Register</a>
+        </div>
+        <div class="doc">
+          <h3>Documents</h3>
+          <a href="">Privacy policy</a> |
+          <a href="">Terms of use</a> |
+          <a href="">Refund policy</a>
+        </div>
+        <div class="social_media">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/1stop.ai/?hl=en" target="
+          "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/onestopai?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+          <h3>contact us</h3>
+          <a href="https://api.whatsapp.com/send?phone=+919384728370" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>|
+          <a href="mailto: support@1stop.ai" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2022 can't stop! Wont stop. All righs reserved</p>
+    </footer>
+      <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbx2j_GKr_vtC7cgImFuwVpnRAcsQgB2pWa8FSinBDzzX4Q4x-VPMxovpQlqwLayx9Te/exec'
+                const form = document.forms['submit_googlesheet']
+
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thank you for your review. Hope you will have great time in our program"))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+        </body>
+    </html>

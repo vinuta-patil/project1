@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cant stop! wont stop! | About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <nav class="total_nav">
+    <div class="logo">
+        <a href="one.html">
+        <img src="images/stop.jpg" width="100"></a>
+      </div>
+      <div class="options">
+      <a href="about.html">About US</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">contact</a>
+      <a href="register.html">Login/Register</a>
+    </div>
+    </nav>
+    <div class="l-form">
+      <form name="register-googlesheet" method="post">
+        <h2>LOGIN</h2>
+        <div class="login_container">
+          <input type="text" name="Name" placeholder="Enter Username" required>
+          <input type="password" name="Password" placeholder="Enter Password" required>
+          <button type="submit">Login</button>
+          <button type="button" class="cancelbtn" href="register.html">Cancel</button>
+          </div>
+      </form>
+      </div>
+    <footer>
+      <div class="footer_logo">
+          <a href="one.html">
+          <img src="images/stop.jpg" width="100"></a>
+        </div><br>
+        <div class="Pages">
+          <h3>pages</h3>
+          <a href="about.html">About US</a> |
+          <a href="blog.html">blog</a> |
+          <a href="register.html">Login/Register</a>
+        </div>
+        <div class="doc">
+          <h3>Documents</h3>
+          <a href="">Privacy policy</a> |
+          <a href="">Terms of use</a> |
+          <a href="">Refund policy</a>
+        </div>
+        <div class="social_media">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/onestopai?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+          <h3>contact us</h3>
+          <a href="https://api.whatsapp.com/send?phone=+919384728370" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>|
+          <a href="mailto: support@1stop.ai" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2022 can't stop! Wont stop. All righs reserved</p>
+    </footer>
+      <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzGN4C30o9PRWN8Ax0JmBxE8nOTeljChGHXd8ZIHpyUKE7ILUlogs2YzbAwtcZ9azF5Nw/exec'
+                const form = document.forms['register-googlesheet']
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thank you for getting registered. Hope you will have great time in our program"))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+        </body>
+    </html>
